@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 public class levelSelect : MonoBehaviour {
     void Start()
     {
-        Human.lifecount = 0;
+        Human.lifecount = 3;
     }
 
 	public void lvlOne()

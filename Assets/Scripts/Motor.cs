@@ -4,7 +4,9 @@ using System.Collections;
 public class Motor : MonoBehaviour {
 
     
-	public float vel;
+	public float acel;
+    float vel;
+    float secs;
 	Rigidbody2D rb;
 	void Start () {
 		rb = GetComponent<Rigidbody2D> ();
@@ -13,7 +15,13 @@ public class Motor : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKey (KeyCode.Space) && testGround.isGround) {
-			rb.AddForce(new Vector2(vel,0));
+            secs += Time.deltaTime*10;
+            rb.AddForce(new Vector2(vel, 0));
 		}
-	}
+        else
+        {
+            secs = 0;
+        }
+        vel = acel * secs;
+    }
 }

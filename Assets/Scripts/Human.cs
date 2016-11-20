@@ -18,7 +18,6 @@ public class Human : MonoBehaviour {
 
     void Update()
     {
-        Debug.Log(lifecount);
         if (Input.GetKeyDown(KeyCode.P))
         {
             paused = !paused;
@@ -73,7 +72,7 @@ public class Human : MonoBehaviour {
             Invoke("Restart", 0.5f);
         }
     }
-	void Restart(){
+	public void Restart(){
         
         if (lifecount == 0)
         {

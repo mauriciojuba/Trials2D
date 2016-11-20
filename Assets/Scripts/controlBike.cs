@@ -14,8 +14,8 @@ public class controlBike : MonoBehaviour {
 
 	void Update () {
 		force = Input.GetAxisRaw ("Horizontal");
-		if(!frontUP) frontWheel.AddForce(new Vector2(0, -force*10));
-        else frontWheel.AddForce(new Vector2(0, force * 10));
+		if(!frontUP) frontWheel.AddForce(new Vector2(0, -force*20));
+        else frontWheel.AddForce(new Vector2(0, force * 20));
         checkFlip();
         if (upsidedown)
         {

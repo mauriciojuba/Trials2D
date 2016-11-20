@@ -7,7 +7,7 @@ public class testGround : MonoBehaviour {
 
     
 
-    void OnTriggerEnter2D(Collider2D hit)
+    void OnTriggerStay2D(Collider2D hit)
     {
         if (hit.CompareTag("floor"))
         {
