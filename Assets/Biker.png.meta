@@ -1,0 +1,148 @@
+fileFormatVersion: 2
+guid: 7bbb1d9304045e44583579e69009e49b
+timeCreated: 1478039681
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Biker_1
+    21300002: Biker_0
+    21300004: Biker_2
+    21300006: Biker_3
+    21300008: Biker_4
+    21300010: Biker_5
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 70
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: Standalone
+    maxTextureSize: 1024
+    textureFormat: -3
+    compressionQuality: 50
+    allowsAlphaSplitting: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Biker_1
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 578
+        width: 81
+        height: 89
+      alignment: 9
+      pivot: {x: 0.48836073, y: 0.45762858}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Biker_0
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 578
+        width: 81
+        height: 89
+      alignment: 9
+      pivot: {x: 0.50000036, y: 0.4258505}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Biker_2
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 466
+        width: 81
+        height: 89
+      alignment: 9
+      pivot: {x: 0.41852635, y: 0.3517007}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Biker_3
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 345
+        width: 81
+        height: 89
+      alignment: 9
+      pivot: {x: 0.546556, y: 0.3834791}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Biker_4
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 346
+        width: 81
+        height: 89
+      alignment: 9
+      pivot: {x: 0.58147305, y: 0.36229336}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Biker_5
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 466
+        width: 81
+        height: 89
+      alignment: 9
+      pivot: {x: 0.48836112, y: 0.13984422}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
