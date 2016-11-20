@@ -6,6 +6,8 @@ public class ScoreController : MonoBehaviour {
 
     public Text scoreText;
     int scoreNum;
+    public Text flipText;
+    int flipNum;
     public Text timeText;
     float seconds = 0;
     int minutes, hours;
@@ -21,6 +23,7 @@ public class ScoreController : MonoBehaviour {
         
         UIController.finalTime = timeText.text;
         UIController.finalScore = scoreText.text;
+        UIController.finalFlip = flipText.text;
         if (!Human.dead)
         {
             timeCount();
@@ -48,4 +51,9 @@ public class ScoreController : MonoBehaviour {
         scoreNum += scoreAmount;
         scoreText.text = "" + scoreNum;
 	}
+    public void flipUP()
+    {
+        flipNum += 1;
+        flipText.text = "" + flipNum;
+    }
 }

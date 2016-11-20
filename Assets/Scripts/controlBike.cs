@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class controlBike : MonoBehaviour {
-
+    public ScoreController pontos;
 	Rigidbody2D frontWheel;
     public Transform head, rear, front;
 	float force;
@@ -48,6 +48,6 @@ public class controlBike : MonoBehaviour {
     }
     public void flipou()
     {
-        Debug.Log("Flip");
+        pontos.flipUP();
     }
 }

@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Human : MonoBehaviour {
 
@@ -8,12 +9,16 @@ public class Human : MonoBehaviour {
     public ScoreController pontos;
     public static bool paused;
     public static bool dead;
+    public static int lifecount = 3;
+    public Text lifecountText;
 	void Start(){
         paused = false;
-	}
+        lifecountText.text = "x" + lifecount;
+    }
 
     void Update()
     {
+        Debug.Log(lifecount);
         if (Input.GetKeyDown(KeyCode.P))
         {
             paused = !paused;
@@ -32,6 +37,7 @@ public class Human : MonoBehaviour {
         }
         if (dead)
         {
+            
             ui.showStatus();
         }
     }
@@ -52,16 +58,34 @@ public class Human : MonoBehaviour {
 			//transform.rotation = Quaternion.identity;
 			transform.up = hit.transform.up;
             dead = true;
-            
-			Invoke ("Restart", 2f);
-		}
+            Invoke("Restart", 2f);
+
+
+        }
         if (hit.CompareTag("star"))
         {
             pontos.scoreUP(1);
             hit.gameObject.SetActive(false);
         }
+        if (hit.CompareTag("death"))
+        {
+            dead = true;
+            Invoke("Restart", 0.5f);
+        }
     }
 	void Restart(){
-		//SceneManager.LoadScene("prototipo");
-	}
+        
+        if (lifecount == 0)
+        {
+            SceneManager.LoadScene("Menu");
+        }
+        else
+        {
+            lifecount -= 1;
+            lifecountText.text = "x" + lifecount;
+            SceneManager.LoadScene("prototipo");
+            dead = false;
+
+        }
+    }
 }

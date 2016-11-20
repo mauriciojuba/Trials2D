@@ -3,6 +3,7 @@ using System.Collections;
 
 public class Motor : MonoBehaviour {
 
+    
 	public float vel;
 	Rigidbody2D rb;
 	void Start () {
@@ -11,10 +12,8 @@ public class Motor : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKey (KeyCode.Space)) {
+		if (Input.GetKey (KeyCode.Space) && testGround.isGround) {
 			rb.AddForce(new Vector2(vel,0));
-		
 		}
-
 	}
 }
